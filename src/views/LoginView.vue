@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <div class="login"></div>
 </template>
 
 <script lang="ts">
@@ -10,3 +10,5 @@ export default defineComponent({
   components: {},
 });
 </script>
+
+<style lang="scss" scoped></style>
