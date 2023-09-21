@@ -1,5 +1,7 @@
 <template>
-  <div class="login"></div>
+  <div class="login">
+    <div class="logo-bg">moin</div>
+  </div>
 </template>
 
 <script lang="ts">

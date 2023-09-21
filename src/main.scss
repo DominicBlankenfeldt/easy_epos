@@ -1,3 +1,12 @@
+// background logo
+.logo-bg {
+  background-image: url("assets/easy_epos_logo.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
 // costum button
 .cbtn {
   border-radius: 5px;
