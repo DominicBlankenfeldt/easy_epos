@@ -14,10 +14,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: url("assets/easy_epos_logo.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 nav {
-  padding: 30px;
+  height: 6vh;
 }
 
 nav a {

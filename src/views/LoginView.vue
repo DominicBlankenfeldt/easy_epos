@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <div class="logo-bg">moin</div>
+    <div class=""></div>
   </div>
 </template>
 
