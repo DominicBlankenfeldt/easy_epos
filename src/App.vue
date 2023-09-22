@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/home">Home</router-link> |
-    <router-link to="/main">Main</router-link> |
+    <router-link to="/settings">Einstellungen</router-link> |
     <router-link to="/login">Login</router-link>
   </nav>
   <router-view />
@@ -19,6 +19,14 @@
   background-position: center;
   width: 100vw;
   height: 100vh;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
 }
 
 nav {
