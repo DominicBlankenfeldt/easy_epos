@@ -1,6 +1,6 @@
 <template>
   <div class="login d-flex justify-content-center">
-    <div class="ccard w-50">
+    <div class="ccard cshadow w-50">
       <div class="ccard-header pt-5">
         <div><h4>easyepos</h4></div>
         <div><h2>Login</h2></div>
