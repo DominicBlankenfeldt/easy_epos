@@ -51,7 +51,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .login {
-  padding-top: 18%;
+  padding-top: 12%;
 }
 .login-form {
   display: flex;
