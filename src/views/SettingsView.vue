@@ -18,9 +18,7 @@
     >
       Reports
     </div>
-    <div class="cbtn cbtn-red cbtn-shadow mx-2 my-4" @click="logout()">
-      Logout
-    </div>
+    <div class="cbtn cbtn-red cbtn-shadow mx-2 my-4">Logout</div>
     <router-view></router-view>
   </div>
 </template>

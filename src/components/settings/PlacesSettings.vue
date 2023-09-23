@@ -1,7 +1,7 @@
 <template>
   <div></div>
   <div class="places">
-    <div class="ccard cshadow w-50">
+    <div class="ccard cshadow w-50 mb-5">
       <div class="ccard-header py-4">
         <div
           class="cbtn cbtn-yellow cbtn-shadow mx-2"

@@ -15,6 +15,7 @@
               placeholder=""
               name="username"
               required
+              v-model="a"
             />
           </div>
           <div class="m-3 d-flex flex-column justify-content-start">
@@ -25,12 +26,20 @@
               placeholder=""
               name="psw"
               required
+              v-model="b"
             />
           </div>
 
-          <div class="m-3 cbtn cbtn-yellow cbtn-shadow mt-5">Login</div>
+          <div class="m-3 cbtn cbtn-yellow cbtn-shadow mt-5" @click="login()">
+            Login
+          </div>
           <label>
-            <input type="checkbox" checked="checked" name="remember" />
+            <input
+              type="checkbox"
+              v-model="checked"
+              name="remember"
+              value="true"
+            />
             Remember me
           </label>
         </div>
@@ -46,6 +55,38 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "LoginView",
   components: {},
+  mounted() {
+    this.load();
+  },
+  data() {
+    return {
+      checked: false,
+      a: "",
+      b: "",
+    };
+  },
+  methods: {
+    load() {
+      let helper = localStorage.getItem("eman");
+      let helper2 = localStorage.getItem("ssapdrow");
+      if (helper !== null && helper2 !== null) {
+        this.a = helper;
+        this.b = helper2;
+        console.log("setup load");
+      } else {
+        return;
+      }
+    },
+    login() {
+      if (this.checked) {
+        localStorage.setItem("eman", this.a);
+        localStorage.setItem("ssapdrow", this.b);
+        console.log("setup");
+      } else {
+        return;
+      }
+    },
+  },
 });
 </script>
 
